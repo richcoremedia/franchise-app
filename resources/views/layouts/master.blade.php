@@ -8,15 +8,18 @@
 </head>
 <body>
 
-     <ul>
-          <li><a href="{{ url('/language/en') }}" title="EN">EN</a></li>
-          <li><a href="{{ url('/language/fi') }}" title="FI">FI</a></li>
-     </ul>
+ 	<ul>
+ 		<li><a href="{{ url('/office') }}">Office</a></li>
+ 		<li><a href="{{ url('/agent') }}">Agent</a></li>
+ 		<li><a href="{{ url('/contact') }}">Contact</a></li>
+      	<li><a href="{{ url('/language/en') }}" title="EN">EN</a></li>
+      	<li><a href="{{ url('/language/fi') }}" title="FI">FI</a></li>
+ 	</ul>
 
-     @yield('contents')
+ 	@yield('contents')
 
-     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+ 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
-     @yield('page_scripts')
+ 	@yield('page_scripts')
 </body>
 </html>

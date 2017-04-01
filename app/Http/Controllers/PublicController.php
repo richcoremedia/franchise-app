@@ -37,4 +37,13 @@ class PublicController extends Controller
 
           }
     }
+
+    public function office()
+    {
+          return view('office');
+    }
+    public function agent()
+    {
+          return view('agent');
+    }
 }
