@@ -8,8 +8,9 @@
                <li>
                     Name: {{ $property['name'] }} <br>
                     Size: {{ $property['size'] }} <br>
-                    <a href="{{ url('/property/' . $property['id'] . '/' . $property['name']) }}" title="View">View</a> <br><br>
+                    <a href="{{ url('/propertyDetails/' . $property['id']) }}" title="View">View</a> <br><br>
                </li>
           @endforeach
      </ul>
+
 @stop

@@ -1,1 +1,1 @@
-Your are viewing {{ $id }} and {{ $property_name }}.
+Your are viewing {{ $id }}.

@@ -12,5 +12,7 @@ Route::get('/language/{locale}', 'PublicController@language');
 Route::get('/contact', 'PublicController@contact');
 Route::get('/office', 'PublicController@office');
 Route::get('/agent', 'PublicController@agent');
-Route::get('/property/{id}/{name}', 'PublicController@propertyDetails');
+// Route::get('/property/{id}/{name}', 'PublicController@propertyDetails');
 Route::get('/property', 'PublicController@property');
+Route::get('/propertyDetails/{id}', 'PublicController@propertyDetails');
+Route::post('/propertyDetails/{id}', 'PublicController@contactAgent');

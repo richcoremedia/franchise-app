@@ -59,13 +59,18 @@ class PublicController extends Controller
          return view('property')->with('propertyLists', $lists);
     }
 
-    public function propertyDetails($id, $name)
+    public function propertyDetails($id)
+    {
+        return view('propertyDetails')->with('id', $id);
+    }
+
+    public function contactAgent($id)
     {
           $data = [];
           $data['email']  = 'email@receiver.com';
           $data['name']  = 'receiver name';
           $data['id']  = $id;
-          $data['property_name']  = $name;
+          // $data['property_name']  = $name;
 
           Mail::send('emails.view', $data, function ($m) use ($data) {
              $m->from( env('MAIL_SENDER'), config('app.name') );
