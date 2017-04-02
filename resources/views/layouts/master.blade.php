@@ -57,11 +57,7 @@
 					<nav id="primary-menu">
 
 						<ul>
-							<li class="current"><a href="{{ url('/') }}"><div>Home</div></a></li>
-							<li><a href="{{ url('/property') }}"><div>Property</div></a></li>
-							<li><a href="{{ url('/office') }}"><div>Office</div></a></li>
-							<li><a href="{{ url('/agent') }}"><div>Agent</div></a></li>
-							<li><a href="{{ url('/contact') }}"><div>Contact</div></a></li>
+							@include('partial.menu')
 						</ul>
 
 					</nav>
