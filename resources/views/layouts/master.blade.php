@@ -48,8 +48,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="{{ url('/') }}" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
-						<a href="{{ url('/') }}" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+						<a href="{{ url('/') }}" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="{{ asset('images/logo.png') }}" alt="Canvas Logo"></a>
+						<a href="{{ url('/') }}" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="{{ asset('images/logo@2x.png') }}" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -60,8 +60,8 @@
 							<li class="current"><a href="{{ url('/') }}"><div>Home</div></a></li>
 							<li><a href="{{ url('/property') }}"><div>Property</div></a></li>
 							<li><a href="{{ url('/office') }}"><div>Office</div></a></li>
-							<li><a href="{{ url('/agent') }}"><div>Agent</div></a></li>			
-							<li><a href="{{ url('/contact') }}"><div>Contact</div></a></li>			
+							<li><a href="{{ url('/agent') }}"><div>Agent</div></a></li>
+							<li><a href="{{ url('/contact') }}"><div>Contact</div></a></li>
 						</ul>
 
 					</nav>
@@ -262,7 +262,7 @@
 							<a href="#" class="social-icon si-small si-borderless si-twitter">
 								<i class="icon-twitter"></i>
 								<i class="icon-twitter"></i>
-							</a>					
+							</a>
 						</div>
 
 						<div class="clear"></div>
