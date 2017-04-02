@@ -69,6 +69,8 @@
 
 		</header><!-- #header end -->
 
+		@include('partial.submenu')
+
 		<!-- Content
 		============================================= -->
 		@yield('contents')

@@ -16,3 +16,6 @@ Route::get('/agent', 'PublicController@agent');
 Route::get('/property', 'PublicController@property');
 Route::get('/propertyDetails/{id}', 'PublicController@propertyDetails');
 Route::post('/propertyDetails/{id}', 'PublicController@contactAgent');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
