@@ -15,6 +15,10 @@
 	<link rel="stylesheet" href="{{ asset('css/animate.css') }}" type="text/css" />
 	<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" type="text/css" />
 
+	<!-- Radio Checkbox Plugin -->
+	<link rel="stylesheet" href="css/components/radio-checkbox.css" type="text/css" />
+
+
 	<link rel="stylesheet" href="{{ asset('css/responsive.css') }}" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
