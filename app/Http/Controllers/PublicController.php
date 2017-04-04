@@ -38,12 +38,17 @@ class PublicController extends Controller
   public function office()
   {
     $lists = [
-      ['id' => '1', 'name' => 'A'],
-      ['id' => '2', 'name' => 'B'],
-      ['id' => '3', 'name' => 'C'],
-      ['id' => '4', 'name' => 'D']
+      ['id' => '1', 'name' => 'Office A', 'city' => 'City A'],
+      ['id' => '2', 'name' => 'Office B', 'city' => 'City B'],
+      ['id' => '3', 'name' => 'Office C', 'city' => 'City C'],
+      ['id' => '4', 'name' => 'Office D', 'city' => 'City D']
     ];
     return view('office')->with('officeLists', $lists);
+  }
+
+  public function company()
+  {
+        return view('company');
   }
 
   public function agent()
@@ -57,14 +62,19 @@ class PublicController extends Controller
     return view('agent')->with('agentLists', $lists);
   }
 
+  public function agentDetails($id)
+  {
+      return view('agentDetails')->with('id', $id);
+  }
+
   public function property()
   {
     $lists = [
-      ['id' => '1', 'name' => 'AXX', 'size' => '1223'],
-      ['id' => '2', 'name' => 'BCD', 'size' => '3333'],
-      ['id' => '3', 'name' => 'ISFF', 'size' => '423'],
-      ['id' => '4', 'name' => 'DEF', 'size' => '456'],
-      ['id' => '5', 'name' => 'FGG', 'size' => '65']
+      ['id' => '1', 'name' => 'AXX', 'city' => 'City A'],
+      ['id' => '2', 'name' => 'BCD', 'city' => 'City B'],
+      ['id' => '3', 'name' => 'ISFF', 'city' => 'City C'],
+      ['id' => '4', 'name' => 'DEF', 'city' => 'City D'],
+      ['id' => '5', 'name' => 'FGG', 'city' => 'City E']
     ];
 
     return view('property')->with('propertyLists', $lists);
@@ -90,5 +100,30 @@ class PublicController extends Controller
 
     // DD for var_dump in LARAVEL
     dd($id);
+  }
+
+  public function assessment()
+  {
+        return view('assessment');
+  }
+
+  public function buy()
+  {
+        return view('buy');
+  }
+
+  public function sell()
+  {
+        return view('sell');
+  }
+
+  public function rent()
+  {
+        return view('rent');
+  }
+
+  public function news()
+  {
+        return view('news');
   }
 }

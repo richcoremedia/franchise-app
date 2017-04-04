@@ -3,52 +3,52 @@
 @section('contents')
 	
 	<!-- Page Title
-     ============================================= -->
-     <section id="page-title">
+ ============================================= -->
+ <section id="page-title" class="page-title-mini">
 
-          <div class="container clearfix">
-               <h1>Agent</h1>
-               <span>Our agents</span>
-               <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active">Agent</li>
-               </ol>
+  <div class="container clearfix">
+       <h1>Agent</h1>
+       <ol class="breadcrumb">
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/office') }}">Office</a></li>
+            <li class="active">Agent</li>
+       </ol>
+  </div>
+
+ </section><!-- #page-title end -->
+
+ <section id="content">
+
+  <div class="content-wrap">
+
+    <div class="container clearfix">
+
+      <div class="fancy-title title-border">
+        <h3>Office A</h3>
+      </div>
+
+      @foreach ($agentLists as $agent)
+
+        <div class="col-md-4 bottommargin-lg">
+
+          <div class="team">
+            <div class="team-image">
+              <img src="{{ asset('images/team/3.jpg') }}" alt="John Doe">
+            </div>
+            <div class="team-desc">
+              <div class="team-title bottommargin-sm"><h4>{{ $agent['name'] }}</h4><span>CEO</span><span>1234567890</span><span>abc@abc.com</span></div>
+              <a href="{{ url('/agentDetails/'. $agent['id']) }}" class="button button-3d nomargin">Profile</a>
+            </div>
           </div>
 
-     </section><!-- #page-title end -->
+        </div>
 
-     <section id="content">
+      @endforeach
 
-          <div class="content-wrap">
+    </div>
 
-               <div class="container clearfix">
+  </div>
 
-                    <!-- Property
-                    ============================================= -->
-                    <div id="property" class="shop grid-container clearfix" data-layout="fitRows">
-                         
-                        @foreach ($agentLists as $agent)
-                   
-                          	<div class="product clearfix">
-                               	<div class="product-image">
-                                    <a href="#"><img src="images/shop/dress/1.jpg" alt="Checked Short Dress"></a>
-                                    <a href="#"><img src="images/shop/dress/1-1.jpg" alt="Checked Short Dress"></a>
-                                    <div class="sale-flash">New Listing</div>                                        
-                               	</div>
-                               	<div class="product-desc">
-                                    <div class="product-title"><h3><a href="#">{{ $agent['name'] }}</a></h3></div>
-                                    <div class="product-price"><ins>$12.49</ins></div>
-                               	</div>
-                          	</div>
-
-                        @endforeach
-
-                    </div><!-- #property end -->
-
-               </div>
-
-          </div>
-
-     </section>
+</section>
 
 @stop

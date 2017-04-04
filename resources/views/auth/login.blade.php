@@ -1,4 +1,4 @@
-@extends('layouts.app', ['pageTitle' => 'Login'])
+@extends('layouts.master', ['pageTitle' => 'Login'])
 
 @section('contents')
 

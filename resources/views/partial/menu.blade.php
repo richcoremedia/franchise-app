@@ -5,10 +5,10 @@
     </ul>
 </li>
 <li class="{{ Request::path() == 'property' ? 'current' : '' }}"><a href="{{ url('/property') }}"><div>Properties</div></a></li>
-<li class="{{ Request::path() == 'service' ? 'current' : '' }}"><a href="{{ url('/service') }}"><div>Services</div></a>
+<li><a href="#"><div>Services</div></a>
     <ul>
         <li class="{{ Request::path() == 'assessment' ? 'current' : '' }}"><a href="{{ url('/assessment') }}"><div>Assessment Visit</div></a></li>
-        <li class="{{ Request::path() == 'buy' ? 'current' : '' }}"><a href="{{ url('/sell') }}"><div>Buy</div></a></li>        
+        <li class="{{ Request::path() == 'buy' ? 'current' : '' }}"><a href="{{ url('/buy') }}"><div>Buy</div></a></li>        
         <li class="{{ Request::path() == 'sell' ? 'current' : '' }}"><a href="{{ url('/sell') }}"><div>Sell</div></a></li>
         <li class="{{ Request::path() == 'rent' ? 'current' : '' }}"><a href="{{ url('/rent') }}"><div>Rent</div></a></li>
     </ul>

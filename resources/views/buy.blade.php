@@ -1,4 +1,4 @@
-@extends('layouts.master', ['pageTitle' => 'Contact'])
+@extends('layouts.master', ['pageTitle' => 'Buy'])
 
 @section('contents')
 
@@ -7,18 +7,14 @@
 	<section id="page-title" class="page-title-mini">
 
 		<div class="container clearfix">
-			<h1>Contact</h1>
+			<h1>Buy</h1>
 			<ol class="breadcrumb">
-				<li><a href="#">Home</a></li>
-				<li class="active">Contact</li>
+				<li><a href="{{ url('/') }}">Home</a></li>
+				<li class="active">Buy</li>
 			</ol>
 		</div>
 
 	</section><!-- #page-title end -->
-
-	<!-- Google Map
-	============================================= -->
-	<section id="google-map" class="gmap slider-parallax"></section>
     
     <section id="content">
 
@@ -28,7 +24,7 @@
 
 				<!-- Postcontent
 				============================================= -->
-				<div class="postcontent nobottommargin">
+				<div class="col_full nobottommargin ">
 
 					<h3>Send us an Email</h3>
 
@@ -100,35 +96,6 @@
 					</div>
 
 				</div><!-- .postcontent end -->
-
-				<!-- Sidebar
-				============================================= -->
-				<div class="sidebar col_last nobottommargin">
-
-					<address>
-						<strong>Headquarters:</strong><br>
-						795 Folsom Ave, Suite 600<br>
-						San Francisco, CA 94107<br>
-					</address>
-					<abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
-					<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
-					<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
-
-					<div class="widget noborder notoppadding">
-
-						<a href="#" class="social-icon si-small si-dark si-facebook">
-							<i class="icon-facebook"></i>
-							<i class="icon-facebook"></i>
-						</a>
-
-						<a href="#" class="social-icon si-small si-dark si-twitter">
-							<i class="icon-twitter"></i>
-							<i class="icon-twitter"></i>
-						</a>
-
-					</div>
-
-				</div><!-- .sidebar end -->
 
 			</div>
 

@@ -4,13 +4,12 @@
 	
 	<!-- Page Title
      ============================================= -->
-     <section id="page-title">
+     <section id="page-title" class="page-title-mini">
 
           <div class="container clearfix">
                <h1>Office</h1>
-               <span>Our offices</span>
                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="{{ url('/') }}">Home</a></li>
                     <li class="active">Office</li>
                </ol>
           </div>
@@ -30,14 +29,9 @@
                         @foreach ($officeLists as $office)
                    
                           	<div class="product clearfix">
-                               	<div class="product-image">
-                                    <a href="#"><img src="images/shop/dress/1.jpg" alt="Checked Short Dress"></a>
-                                    <a href="#"><img src="images/shop/dress/1-1.jpg" alt="Checked Short Dress"></a>
-                                    <div class="sale-flash">New Listing</div>                                        
-                               	</div>
                                	<div class="product-desc">
-                                    <div class="product-title"><h3><a href="#">{{ $office['name'] }}</a></h3></div>
-                                    <div class="product-price"><ins>$12.49</ins></div>
+                                    <div class="product-title"><h3><a href="{{ url('/agent') }}">{{ $office['name'] }}</a></h3></div>
+                                    <div class="product-price"><ins>{{ $office['city'] }}</ins></div>
                                	</div>
                           	</div>
 

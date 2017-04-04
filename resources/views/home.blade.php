@@ -1,15 +1,15 @@
-@extends('layouts.app', ['pageTitle' => 'Dashboard'])
+@extends('layouts.master', ['pageTitle' => 'Dashboard'])
 
 @section('contents')
 
     <!-- Page Title
     ============================================= -->
-    <section id="page-title">
+    <section id="page-title" class="page-title-mini">
 
         <div class="container clearfix">
             <h1>Dashboard</h1>
             <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
+                <li><a href="{{ url('/') }}">Home</a></li>
                 <li class="active">Dashboard</li>
             </ol>
         </div>
