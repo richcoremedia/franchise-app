@@ -5,7 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Richcoremedia" />
 
-	<!-- Favicon -->  
+	<!-- Favicon -->
 	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
 	<!-- Stylesheets
@@ -120,15 +120,7 @@
 
 							<h4>Sitemap</h4>
 
-							<ul>
-								<li><a href="http://codex.wordpress.org/">Documentation</a></li>
-								<li><a href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-								<li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
-								<li><a href="http://wordpress.org/support/">Support Forums</a></li>
-								<li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
-								<li><a href="http://wordpress.org/news/">WordPress Blog</a></li>
-								<li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
-							</ul>
+							@include('partial.menu')
 
 						</div>
 
@@ -153,7 +145,7 @@
 							<a href="#">Office C</a><br>
 							<abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
 							<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br><br>
-							
+
 						</div>
 
 					</div>
@@ -176,8 +168,8 @@
 							<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br><br>
 						</div>
 
-					</div>	
-				</div>				
+					</div>
+				</div>
 
 				</div><!-- .footer-widgets-wrap end -->
 
