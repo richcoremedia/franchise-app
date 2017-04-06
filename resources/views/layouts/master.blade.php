@@ -120,7 +120,9 @@
 
 							<h4>Sitemap</h4>
 
-							@include('partial.menu')
+							<ul>
+								@include('partial.list_menu')
+							</ul>
 
 						</div>
 
